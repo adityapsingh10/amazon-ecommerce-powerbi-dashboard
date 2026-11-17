@@ -109,19 +109,21 @@ Key Analysis:
 - Implemented slicers and cross-page navigation for interactive reporting.
 - Designed a multi-page dashboard with a dedicated landing page.
 
+
 ## Dashboard Screenshots
 
-### Main Page
+### 1. Main Page
 ![Main Page](Screenshots/Main_Page.png)
 
-### Executive Overview
+### 2. Executive Overview
 ![Executive Overview](Screenshots/Executive_Overview.png)
 
-### Product Analysis
+### 3. Product Analysis
 ![Product Analysis](Screenshots/Product_Analysis.png)
 
-### Customer & Delivery Analysis
-![Customer Delivery Analysis](Screenshots/Customer_Delivery_Analysis.png)
+### 4. Customer & Delivery Analysis
+![Customer & Delivery Analysis](Screenshots/Customer_Delivery_Analysis.png)
+
 
 ## Repository Structure
 
