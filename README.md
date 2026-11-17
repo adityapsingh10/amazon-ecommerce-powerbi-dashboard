@@ -113,16 +113,16 @@ Key Analysis:
 ## Dashboard Screenshots
 
 ### 1. Main Page
-![Main Page](Screenshots/Main_Page.png)
+![Main Page](Screenshots/Main_Page.png.png)
 
 ### 2. Executive Overview
-![Executive Overview](Screenshots/Executive_Overview.png)
+![Executive Overview](Screenshots/Executive_Overview.png.png)
 
 ### 3. Product Analysis
-![Product Analysis](Screenshots/Product_Analysis.png)
+![Product Analysis](Screenshots/Product_Analysis.png.png)
 
 ### 4. Customer & Delivery Analysis
-![Customer & Delivery Analysis](Screenshots/Customer_Delivery_Analysis.png)
+![Customer & Delivery Analysis](Screenshots/Customer_Delivery_Analysis.png.png)
 
 
 ## Repository Structure
