@@ -1,0 +1,126 @@
+
+-- ==========================================
+-- AMAZON E-COMMERCE POWER BI PROJECT
+-- DAX MEASURES
+-- ==========================================
+
+-- 1. Total Revenue
+Total Revenue =
+SUM('Amazon'[final_price])
+
+
+-- 2. Total Transactions
+Total Transactions =
+COUNTROWS('Amazon')
+
+
+-- 3. Average Order Value
+Average Order Value =
+DIVIDE(
+    [Total Revenue],
+    [Total Transactions],
+    0
+)
+
+
+-- 4. Unique Customers
+Unique Customers =
+DISTINCTCOUNT('Amazon'[user_id])
+
+
+-- 5. Returned Transactions
+Returned Transactions =
+CALCULATE(
+    [Total Transactions],
+    'Amazon'[is_returned] = TRUE()
+)
+
+
+-- 6. Return Rate
+Return Rate =
+DIVIDE(
+    [Returned Transactions],
+    [Total Transactions],
+    0
+)
+
+
+-- 7. Average Rating
+Average Rating =
+AVERAGE('Amazon'[rating])
+
+
+-- 8. Average Shipping Days
+Average Shipping Days =
+AVERAGE('Amazon'[shipping_time_days])
+
+
+-- 9. Total Products
+Total Products =
+DISTINCTCOUNT('Amazon'[product_id])
+
+
+-- 10. Total Brands
+Total Brands =
+DISTINCTCOUNT('Amazon'[brand])
+
+
+-- 11. Average Discount
+Average Discount =
+AVERAGE('Amazon'[discount])
+
+
+-- 12. Average Seller Rating
+Average Seller Rating =
+AVERAGE('Amazon'[seller_rating])
+
+
+-- 13. Delayed Transactions
+Delayed Transactions =
+CALCULATE(
+    [Total Transactions],
+    'Amazon'[delivery_status] = "Delayed"
+)
+
+
+-- 14. Delayed Rate
+Delayed Rate =
+DIVIDE(
+    [Delayed Transactions],
+    [Total Transactions],
+    0
+)
+
+
+-- 15. Delivered Transactions
+Delivered Transactions =
+CALCULATE(
+    [Total Transactions],
+    'Amazon'[delivery_status] = "Delivered"
+)
+
+
+-- 16. Delivered Rate
+Delivered Rate =
+DIVIDE(
+    [Delivered Transactions],
+    [Total Transactions],
+    0
+)
+
+
+-- 17. Electronics Revenue
+Electronics Revenue =
+CALCULATE(
+    [Total Revenue],
+    'Amazon'[category] = "Electronics"
+)
+
+
+-- 18. Electronics Revenue Share
+Electronics Revenue Share =
+DIVIDE(
+    [Electronics Revenue],
+    [Total Revenue],
+    0
+)
